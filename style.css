@@ -1,0 +1,15 @@
+.success {
+  border: 2px solid green;
+}
+
+.fail {
+  border: 2px solid red;
+}
+
+.alert_message-name,
+.alert_message-email,
+.alert_message-password,
+.alert_message-confirm-password {
+  display: none;
+  color: red;
+}

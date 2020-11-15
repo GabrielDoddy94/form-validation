@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - Form Validation</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" class="input_name" />
+        <span class="alert_message-name"
+          >You must enter 6 or more characters!</span
+        >
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="input_email"
+        />
+        <span class="alert_message-email">Email Invalid!</span>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="input_password"
+        />
+        <span class="alert_message-password"
+          >You must enter 6 or more characters!</span
+        >
+      </div>
+      <div>
+        <label for="confpassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confpassword"
+          placeholder="Confirm Password"
+          class="input_confirm-password"
+        />
+        <span class="alert_message-confirm-password"
+          >Your password does not match the password you set!</span
+        >
+      </div>
+      <button class="form_btn">Confirm</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
