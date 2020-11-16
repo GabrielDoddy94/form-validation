@@ -3,53 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Project - Form Validation</title>
   </head>
   <body>
     <form action="#" class="form">
-      <div>
+      <div class="form_box">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" class="input_name" />
-        <span class="alert_message-name"
-          >You must enter 6 or more characters!</span
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          class="input_name"
+        />
+        <span class="message alert_message-name"
+          ><i class="fas fa-times-circle"></i> You must enter 6 or more
+          characters!</span
         >
+        <span class="message complete_message-name"
+          ><i class="fas fa-check-circle"></i> Valid name!
+        </span>
       </div>
-      <div>
+      <div class="form_box">
         <label for="email">Email</label>
         <input
           type="email"
           id="email"
+          name="email"
           placeholder="Email"
           class="input_email"
         />
-        <span class="alert_message-email">Email Invalid!</span>
+        <span class="message alert_message-email"
+          ><i class="fas fa-times-circle"></i> Email Invalid!</span
+        >
+        <span class="message complete_message-email"
+          ><i class="fas fa-check-circle"></i> Valid email!
+        </span>
       </div>
-      <div>
+      <div class="form_box">
         <label for="password">Password</label>
         <input
           type="password"
           id="password"
+          name="password"
           placeholder="Password"
           class="input_password"
         />
-        <span class="alert_message-password"
-          >You must enter 6 or more characters!</span
+        <span class="message alert_message-password"
+          ><i class="fas fa-times-circle"></i> You must enter 6 or more
+          characters!</span
         >
+        <span class="message complete_message-password"
+          ><i class="fas fa-check-circle"></i> Valid password!
+        </span>
       </div>
-      <div>
+      <div class="form_box">
         <label for="confpassword">Confirm Password</label>
         <input
           type="password"
           id="confpassword"
+          name="confpassword"
           placeholder="Confirm Password"
           class="input_confirm-password"
         />
-        <span class="alert_message-confirm-password"
-          >Your password does not match the password you set!</span
+        <span class="message alert_message-confirm-password"
+          ><i class="fas fa-times-circle"></i> Your password does not match the
+          password you set!</span
         >
+        <span class="message complete_message-confirm-password"
+          ><i class="fas fa-check-circle"></i> Valid confirm password!
+        </span>
       </div>
-      <button class="form_btn">Confirm</button>
+
+      <div class="form_btn-box">
+        <button tipe="submit" class="form_btn">Confirm</button>
+      </div>
     </form>
     <script src="app.js"></script>
   </body>
